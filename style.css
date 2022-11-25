@@ -1,0 +1,6 @@
+@import url(./styles/general.css);
+/* COMPONENTS */
+@import url(./components/header/header.css);
+@import url(./styles/outdoor.css);
+/* SECTIONS */
+@import url(./styles/who-we-are.css);

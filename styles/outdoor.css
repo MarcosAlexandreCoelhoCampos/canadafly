@@ -1,0 +1,47 @@
+.outdoor {
+  width: 100%;
+  height: 75vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+.outdoor .img-outdoor {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+  background-image: url(../imgs/outdoor-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  filter: brightness(35%);
+}
+
+.outdoor.home {
+  background-position-x: 38%;
+  background-position-y: bottom;
+}
+
+.outdoor h1 {
+  color: var(--base-color-1);
+  font-family: var(--ff-outdoor);
+  font-size: var(--fs-outdoor);
+  font-weight: var(--fw-outdoor);
+  letter-spacing: 1px;
+}
+
+.outdoor .detail {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.outdoor .detail h1:last-child:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--contrast-color);
+  margin-top: -6px;
+}

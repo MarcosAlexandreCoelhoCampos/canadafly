@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap");
+/* font-family: 'Cormorant Garamond', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+/* font-family: 'Nunito', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+/* font-family: 'Playfair Display', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+/* font-family: 'Dancing Script', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
+
+:root {
+  --base-color-1: #edf2f4;
+  --base-color-2: #161a1d;
+  --contrast-color: #ba181b;
+  --light-contrast-color: #d90429;
+  --dark-layer: #00000020;
+
+  --ff-nav: "Cormorant Garamond", serif;
+  --fw-nav: 700;
+  --fs-nav: 1.625rem;
+
+  --ff-title: "Cormorant Garamond", serif;
+  --fw-title: 500;
+  --fs-title: 2rem;
+
+  --ff-outdoor: "Dancing Script", cursive;
+  --fw-outdoor: 700;
+  --fs-outdoor: 3rem;
+
+  --ff-text: "Nunito", sans-serif;
+  --fw-text: 300;
+  --fs-text: 1rem;
+
+  --fs-text-small: 0.875rem;
+  --fs-text-button: 1.17rem;
+
+  --ff-subtitle: "Playfair Display", serif;
+  --fw-subtitle: 400;
+  --fs-subtitle: 1.375rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* CONTANERS */
+
+.container,
+.container-outdoor {
+  width: 1100px;
+  max-width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.container-outdoor {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section:nth-child(odd) {
+  background-color: var(--base-color-1);
+}
+section:nth-child(even) {
+  background-color: var(--base-color-2);
+}
+
+/* TITLES */
+
+h2.title {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-title);
+  font-size: var(--fs-title);
+  margin: 0 auto;
+  width: min-content;
+  white-space: nowrap;
+  color: var(--contrast-color);
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+h2.title:after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 1px auto 0 auto;
+  height: 2px;
+  background-color: var(--contrast-color);
+}
+
+/* CALL BUTTON */
+
+.call {
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call button {
+  background: none;
+  color: var(--base-color-2);
+  border: 3px solid var(--light-contrast-color);
+  padding: 5px 25px;
+  font-size: var(--fs-text-button);
+  font-family: var(--ff-nav);
+  font-weight: var(--fw-nav);
+  cursor: pointer;
+  outline: inherit;
+}
+
+.call > p {
+  margin-top: 7px;
+  font-family: var(--ff-text);
+  font-weight: var(--fw-text);
+  font-size: var(--fs-text-small);
+  text-align: center;
+}
+
+/* PARAGRAPHS */
+
+p {
+  font-family: var(--ff-text);
+  font-weight: var(--fw-text);
+  font-size: var(--fs-text);
+  line-height: 140%;
+  color: var(--base-color-2);
+  text-align: justify;
+}
+p + p {
+  margin-top: 30px;
+}
+
+/* IMAGES */
+
+.img {
+  z-index: 0;
+  position: relative;
+  width: min-content;
+  height: min-content;
+  display: flex;
+  border: 3px solid var(--base-color-2);
+}
+
+.img:after {
+  content: "";
+  display: flex;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 3px solid var(--base-color-1);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 1px auto 0 auto;
+}

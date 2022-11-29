@@ -99,8 +99,7 @@
 /* SECTIONS AND FOOTERS*/
 
 section,
-footer,
-.signature {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--base-color-1);
@@ -159,6 +158,8 @@ p {
   line-height: 140%;
   color: var(--base-color-2);
   text-align: justify;
+  max-width: 750px;
+  margin: 0 auto;
 }
 p + p {
   margin-top: 30px;
@@ -166,6 +167,10 @@ p + p {
 
 section:nth-child(even) p {
   color: var(--base-color-1);
+}
+
+p.small {
+  font-size: var(--fs-text-small);
 }
 
 /* CALL BUTTON */
@@ -203,6 +208,43 @@ section:nth-child(even) .call > p {
   color: var(--base-color-1);
 }
 section:nth-child(even) .call > button {
+  color: var(--base-color-1);
+}
+
+/* EXPAND MORE BUTTON */
+
+.expand-more {
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.expand-more button {
+  background: none;
+  color: var(--base-color-2);
+  border: none;
+  padding: 5px 10px 5px 25px;
+  font-size: var(--fs-nav);
+  font-family: var(--ff-nav);
+  font-weight: var(--fw-nav);
+  outline: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.expand-more::after {
+  content: "";
+  display: flex;
+  width: calc(12px * 2.3);
+  height: calc(8px * 2.3);
+  background-image: url(../imgs/expand-more.svg);
+  background-size: cover;
+  z-index: 1;
+}
+
+section:nth-child(even) .expand-more > button {
   color: var(--base-color-1);
 }
 

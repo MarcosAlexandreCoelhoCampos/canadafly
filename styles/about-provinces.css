@@ -1,0 +1,26 @@
+.about-provinces > p {
+  text-align: center;
+  margin: 20px auto 10px auto;
+}
+.about-provinces .content {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.about-provinces .province {
+  position: relative;
+  cursor: pointer;
+}
+.about-provinces .province img {
+  z-index: 0;
+  filter: brightness(40%);
+}
+.about-provinces .province h3 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: var(--base-color-1);
+}

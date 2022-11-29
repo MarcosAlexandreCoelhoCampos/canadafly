@@ -4,3 +4,6 @@
 @import url(./styles/outdoor.css);
 /* SECTIONS */
 @import url(./styles/who-we-are.css);
+@import url(./styles/how-we-help.css);
+/* CONTENT STYLE*/
+@import url(./styles/content-style-one.css);

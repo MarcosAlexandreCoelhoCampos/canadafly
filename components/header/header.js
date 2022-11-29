@@ -12,18 +12,20 @@ export default function componentHeader() {
           </a>
           <nav>
             <ul class="menu-desktop">
-              <li><a href=""> Canadá </a></li>
-              <li><a href=""> Imigração </a></li>
-              <li><a href=""> Serviços </a></li>
-              <li><a href=""> Sobre </a></li>
+              <li><a href="./index.html"> Home </a></li>
+              <li><a href="./canada.html"> Canadá </a></li>
+              <li><a href="#"> Imigração </a></li>
+              <li><a href="#"> Serviços </a></li>
+              <li><a href="#"> Sobre </a></li>
             </ul>
             <div class="menu-mobile">
-              <img src="../../imgs/menu-button.svg" alt="Botão de menu">
+              <img src="./imgs/menu-button.svg" alt="Botão de menu">
               <ul>
-                <li><a href=""> Canadá </a></li>
-                <li><a href=""> Imigração </a></li>
-                <li><a href=""> Serviços </a></li>
-                <li><a href=""> Sobre </a></li>
+                <li><a href="./index.html"> Home </a></li>
+                <li><a href="./canada.html"> Canadá </a></li>
+                <li><a href="#"> Imigração </a></li>
+                <li><a href="#"> Serviços </a></li>
+                <li><a href="#"> Sobre </a></li>
               </ul>
             </div>
           </nav>

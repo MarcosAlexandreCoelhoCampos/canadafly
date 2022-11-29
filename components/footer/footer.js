@@ -11,6 +11,7 @@ export default function componentFooter() {
       <footer class="${classColor}">
         <nav class="container">
           <ul>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Canadá</a></li>
             <li><a href="#">Imigração</a></li>
             <li><a href="#">Serviços</a></li>
@@ -18,8 +19,10 @@ export default function componentFooter() {
           </ul>
         </nav>
       </footer>
-      <div class="container signature ${classColor}">
-        <h2 class=title> Marcos A.C Campos</h2>
+      <div class="signature ${classColor}">
+        <div class="container ">
+          <h2 class=title> Marcos A.C Campos</h2>
+        </div>
       </div>
     `;
     }

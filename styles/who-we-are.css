@@ -15,13 +15,6 @@
   object-fit: fill;
 }
 
-.who-we-are .content .img img {
-  object-fit: cover;
-  overflow: hidden;
-  height: 100%;
-  width: auto;
-}
-
 @media (max-width: 800px) {
   .who-we-are .content {
     display: flex;

@@ -1,0 +1,41 @@
+.how-we-help .content {
+  display: flex;
+  gap: 20px;
+}
+.how-we-help .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-we-help .item .vector {
+  background-color: var(--base-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+}
+.how-we-help .item .vector:after {
+  content: "";
+  display: block;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid var(--light-contrast-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.how-we-help .item h3 {
+  margin: 10px 0;
+}
+
+.how-we-help .item p {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.content-style-one .content {
+  display: flex;
+  gap: 25px;
+}
+
+.content-style-one .content + .content {
+  margin-top: 30px;
+}
+
+.content-style-one .content:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.content-style-one .content h3 {
+  margin-bottom: 10px;
+}

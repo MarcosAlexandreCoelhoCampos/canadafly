@@ -1,0 +1,26 @@
+.content-style-two .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.content-style-two .content .info {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content-style-two .content .img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  .content-style-two .content {
+    display: flex;
+    gap: 0;
+  }
+  .content-style-two .content .img {
+    display: none;
+  }
+}

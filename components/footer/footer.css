@@ -22,25 +22,37 @@ footer.two nav ul a {
   color: var(--base-color-1);
 }
 
+.signature {
+  background-color: var(--base-color-1);
+  padding: 30px 0;
+}
 .signature.one {
   background-color: var(--base-color-2);
-  padding: 30px 0;
+}
+.signature h2.title {
+  color: var(--base-color-2);
+  margin: 0 auto;
 }
 .signature.one h2.title {
   color: var(--base-color-1);
-  margin: 0 auto;
 }
-.signature.one h2.title::after {
-  background-color: var(--base-color-1);
+.signature h2.title::after {
+  background-color: var(--base-color-2);
   margin-top: 10px;
   width: 60%;
 }
-.signature.one h2.title::before {
+.signature.one h2.title::after {
+  background-color: var(--base-color-1);
+}
+.signature h2.title::before {
   content: "";
   display: block;
   width: 60%;
   margin: 0 auto 10px auto;
   height: 2px;
+  background-color: var(--base-color-2);
+}
+.signature.one h2.title::before {
   background-color: var(--base-color-1);
 }
 

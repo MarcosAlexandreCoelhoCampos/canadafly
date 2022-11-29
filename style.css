@@ -4,7 +4,8 @@
 @import url(./components/footer/footer.css);
 /* SECTIONS */
 @import url(./styles/outdoor.css);
-@import url(./styles/who-we-are.css);
 @import url(./styles/how-we-help.css);
+@import url(./styles/about-provinces.css);
 /* CONTENT STYLE*/
 @import url(./styles/content-style-one.css);
+@import url(./styles/content-style-two.css);

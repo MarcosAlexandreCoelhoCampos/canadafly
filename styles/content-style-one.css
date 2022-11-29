@@ -14,3 +14,29 @@
 .content-style-one .content h3 {
   margin-bottom: 10px;
 }
+
+@media (max-width: 900px) {
+  .content-style-one .content .img {
+    width: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .content-style-one .content {
+    flex-direction: column;
+  }
+  .content-style-one .content + .content {
+    flex-direction: column;
+  }
+  .content-style-one .content:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .content-style-one .content .img {
+    width: 100%;
+    height: 250px;
+  }
+  .content-style-one .content .img img {
+    width: 100%;
+    object-position: center;
+  }
+}

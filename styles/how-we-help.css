@@ -39,3 +39,21 @@
 .how-we-help .item p {
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .how-we-help .content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .how-we-help .item {
+    justify-content: start;
+  }
+}
+@media (max-width: 350px) {
+  .how-we-help .content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}

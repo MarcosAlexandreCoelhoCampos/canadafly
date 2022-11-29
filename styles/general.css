@@ -64,9 +64,11 @@
   flex-direction: column;
 }
 
-/* SECTIONS */
+/* SECTIONS AND FOOTERS*/
 
-section {
+section,
+footer,
+.signature {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--base-color-1);

@@ -1,0 +1,44 @@
+footer {
+  background-color: var(--base-color-1);
+}
+
+footer.two {
+  background-color: var(--base-color-2);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul a {
+  font-family: var(--ff-nav);
+  font-weight: var(--fw-nav);
+  font-size: var(--fs-nav);
+  color: var(--base-color-2);
+}
+
+footer.two nav ul a {
+  color: var(--base-color-1);
+}
+
+.signature.one {
+  background-color: var(--base-color-2);
+}
+.signature.one h2.title {
+  color: var(--base-color-1);
+  margin: 0 auto;
+}
+.signature.one h2.title::after {
+  background-color: var(--base-color-1);
+  margin-top: 10px;
+  width: 60%;
+}
+.signature.one h2.title::before {
+  content: "";
+  display: block;
+  width: 60%;
+  margin: 0 auto 10px auto;
+  height: 2px;
+  background-color: var(--base-color-1);
+}

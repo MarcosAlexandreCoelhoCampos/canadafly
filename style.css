@@ -1,8 +1,9 @@
 @import url(./styles/general.css);
 /* COMPONENTS */
 @import url(./components/header/header.css);
-@import url(./styles/outdoor.css);
+@import url(./components/footer/footer.css);
 /* SECTIONS */
+@import url(./styles/outdoor.css);
 @import url(./styles/who-we-are.css);
 @import url(./styles/how-we-help.css);
 /* CONTENT STYLE*/

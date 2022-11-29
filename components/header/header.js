@@ -10,21 +10,23 @@ export default function componentHeader() {
           <a href="../index.html">
             <h1>CanadaFly</h1>
           </a>
-          <ul class="menu-desktop">
-            <li><a href=""> Canadá </a></li>
-            <li><a href=""> Imigração </a></li>
-            <li><a href=""> Serviços </a></li>
-            <li><a href=""> Sobre </a></li>
-          </ul>
-          <div class="menu-mobile">
-            <img src="../../imgs/menu-button.svg" alt="Botão de menu">
-            <ul>
+          <nav>
+            <ul class="menu-desktop">
               <li><a href=""> Canadá </a></li>
               <li><a href=""> Imigração </a></li>
               <li><a href=""> Serviços </a></li>
               <li><a href=""> Sobre </a></li>
             </ul>
-          </div>
+            <div class="menu-mobile">
+              <img src="../../imgs/menu-button.svg" alt="Botão de menu">
+              <ul>
+                <li><a href=""> Canadá </a></li>
+                <li><a href=""> Imigração </a></li>
+                <li><a href=""> Serviços </a></li>
+                <li><a href=""> Sobre </a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </header>
     `;
@@ -32,5 +34,3 @@ export default function componentHeader() {
   }
   customElements.define("header-component", Header);
 }
-
-/* <img src="../../${this.attributes[0].value}" alt=""> */

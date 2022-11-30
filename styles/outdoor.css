@@ -10,16 +10,10 @@
   width: 100%;
   height: inherit;
   z-index: -1;
-  background-image: url(../imgs/outdoor-home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   filter: brightness(35%);
-}
-
-.outdoor.home {
-  background-position-x: 38%;
-  background-position-y: bottom;
 }
 
 .outdoor h1 {
@@ -44,4 +38,18 @@
   height: 3px;
   background-color: var(--contrast-color);
   margin-top: -6px;
+}
+
+/* OUTDOOR HOME */
+.outdoor.home {
+  background-position-x: 38%;
+  background-position-y: bottom;
+}
+.outdoor.home .img-outdoor {
+  background-image: url(../imgs/outdoor-home.png);
+}
+
+/* OUTDOOR CANADA */
+.outdoor.canada .img-outdoor {
+  background-image: url(../imgs/outdoor-canada-info.png);
 }

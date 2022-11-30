@@ -4,14 +4,18 @@
 }
 .about-provinces .content {
   display: flex;
-  overflow-x: scroll;
   gap: 20px;
+  background-color: red;
 }
 .about-provinces .province {
   position: relative;
   cursor: pointer;
 }
 .about-provinces .province img {
+  width: 22vw;
+  height: 22vw;
+  max-width: 200px;
+  max-height: 200px;
   z-index: 0;
   filter: brightness(40%);
 }

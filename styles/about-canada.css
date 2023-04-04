@@ -1,0 +1,14 @@
+.about-canada .content {
+  display: flex;
+  gap: var(--gap-1);
+  align-items: center;
+}
+
+.about-canada .content .img-detail {
+  min-width: 300px;
+  height: 100%;
+}
+
+.about-canada .content .text {
+  max-width: 60%;
+}

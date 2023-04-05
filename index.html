@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> CanadaFly </title>
   <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" type="module" defer></script>
   <link rel="icon" type="image/png" href="./imgs/CF.svg" />
 </head>
 
@@ -114,49 +115,142 @@
         </p>
         <div class="pronvices">
           <p class="small"> Descubra mais sobre a pronvincia clicando nela. </p>
-          <div class="pronvices-slide">
-            <div class="province">
+          <div class="pronvices-slide" data-slide>
+            <div class="province" data-active="Alberta">
               <img src="./imgs/provinces/alberta.png" alt="Imagem de Alberta">
               <p>Alberta</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="British Columbia">
               <img src="./imgs/provinces/british-columbia.png" alt="Imagem de British Columbia">
               <p>British Columbia</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Manitoba">
               <img src="./imgs/provinces/manitoba.png" alt="Imagem de Manitoba">
               <p>Manitoba</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="New Brunswick">
               <img src="./imgs/provinces/new-brunswick.png" alt="Imagem de New Brunswick">
               <p>New Brunswick</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Newfoundland And Labrador">
               <img src="./imgs/provinces/newfoundland-and-labrador.png" alt="Imagem de Newfoundland And Labrador">
               <p>Newfoundland And Labrador</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Nova Scotia">
               <img src="./imgs/provinces/nova-scotia.png" alt="Imagem de Nova Scotia">
               <p>Nova Scotia</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Ontario">
               <img src="./imgs/provinces/ontario.png" alt="Imagem de Ontario">
               <p>Ontario</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Prince Edward Iland">
               <img src="./imgs/provinces/prince-edward-iland.png" alt="Imagem de Prince Edward Iland">
               <p>Prince Edward Iland</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Quebec">
               <img src="./imgs/provinces/quebec.png" alt="Imagem de Quebec">
               <p>Quebec</p>
             </div>
-            <div class="province">
+            <div class="province" data-active="Saskatchewan">
               <img src="./imgs/provinces/saskatchewan.png" alt="Imagem de Saskatchewan">
               <p>Saskatchewan</p>
             </div>
           </div>
         </div>
+        <div class="provinces-infos">
+          <div class="province-info" data-to-active="Alberta">
+            <h3> Alberta </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="British Columbia">
+            <h3> British Columbia </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Manitoba">
+            <h3> Manitoba </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="New Brunswick">
+            <h3> New Brunswick </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Newfoundland And Labrador">
+            <h3> Newfoundland And Labrador </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Nova Scotia">
+            <h3> Nova Scotia </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Ontario">
+            <h3> Ontario </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Prince Edward Iland">
+            <h3> Prince Edward Iland </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Quebec">
+            <h3> Quebec </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+          <div class="province-info" data-to-active="Saskatchewan">
+            <h3> Saskatchewan </h3>
+            <p>A nim mollit nisi ut labore. Aliqua amet pariatur elit ipsum aliqua nostrud in. Eu officia occaecat et ea
+              sunt et deserunt et laborum occaecat non sint duis irure. Occaecat ex ad do ipsum veniam labore et. Lorem
+              anim culpa sint esse pariatur ut non incididunt amet aliqua magna. Magna Lorem consequat do qui velit
+              adipisicing consequat adipisicing adipisicing cupidatat duis cupidatat cillum eu. Sunt enim aliqua minim
+              ullamco qui labore. Magna do magna eu nisi. Culpa et adipisicing laborum aute nulla Lorem.
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   </main>

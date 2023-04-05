@@ -40,6 +40,7 @@ font-family: "Dancing Script", cursive;
   /* OTHERS */
   --gap-1: 40px;
   --gap-2: 30px;
+  --gap-3: 10px;
 }
 
 body {
@@ -103,6 +104,14 @@ section:nth-child(even) {
 p {
   font-family: var(--f-2);
   font-weight: var(--f-2-w-1);
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+p + p {
+  margin-top: 15px;
 }
 
 /* TITLES */
@@ -148,6 +157,7 @@ h3 {
   margin-top: var(--gap-1);
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .see-more-button button {
@@ -177,8 +187,8 @@ h3 {
 
 .img-detail:after {
   content: "";
-  width: 95%;
-  height: 90%;
+  width: calc(100% - 23px);
+  height: calc(100% - 23px);
   position: absolute;
   top: 50%;
   right: 50%;

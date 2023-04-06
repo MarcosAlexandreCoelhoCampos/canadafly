@@ -13,9 +13,11 @@
 .about-provinces .pronvices-slide {
   display: flex;
   gap: var(--gap-2);
-  overflow-x: hidden;
+  overflow: hidden;
+  object-fit: cover;
   -webkit-overflow-scrolling: touch;
   cursor: grab;
+  max-height: 100%;
 }
 
 .about-provinces .province {
@@ -27,7 +29,7 @@
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  z-index: 400;
+  z-index: 1;
 }
 
 .about-provinces .province img {
@@ -35,6 +37,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 .about-provinces .province p {
@@ -63,15 +66,6 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.about-provinces .province::before {
-  content: "";
-  z-index: 1;
-  width: calc(100% - 18px);
-  height: calc(100% - 18px);
-  border: 3px solid var(--3);
-  position: absolute;
-}
-
 /* INFO */
 
 .about-provinces .province-info {
@@ -86,7 +80,32 @@
   text-align: center;
 }
 
-/* Celular */
+.about-provinces .province-info .content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-2);
+}
+
+.about-provinces .province-info .imgs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+}
+
+.about-provinces .province-info .imgs .img-animation {
+  height: 125px;
+  width: 350px;
+}
+
+.about-provinces .province-info .text {
+  height: min-content;
+}
+
+.province-info .img-detail p {
+  display: none;
+}
+
+/* MOBILE */
 
 @media (hover: none) {
   .about-provinces .pronvices-slide {

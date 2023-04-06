@@ -9,7 +9,6 @@ export function activeSlideInfo() {
   function checkActive(e) {
     e.stopPropagation();
     const province = e.target.closest(".province");
-    console.log(province.getAttribute("data-active"));
     if (province) fActive(province.getAttribute("data-active"));
   }
 
@@ -20,4 +19,5 @@ export function activeSlideInfo() {
       if (itemToFind === item) itemToActive.classList.toggle("active");
     });
   }
+  itemsToActive[0].classList.add("active");
 }
